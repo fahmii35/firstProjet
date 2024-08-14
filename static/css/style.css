@@ -4,10 +4,73 @@ body{
     /* background-color: #e8e5e5 !important; */
 }
 
-.section{
-    /* background-color: red; */
-}
-.propos{
-    /* background-color: red; */
+
+.book{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* letter-spacing: 4px; */
     
+margin-top: 1px;
+    padding-bottom: 133px;
+    padding-top: 13px;
+    border-radius: 56px;
+/* background-color: rgb(173, 194, 248); */
+
+
+}
+.book a {
+    text-decoration: none;
+    line-height: 59px;
+    color:black ;
+margin-right: 98px;
+    
+}
+.book span{
+    
+border-radius: 100%;
+background-color: rgb(127, 168, 244);
+margin-right: 23px;
+padding: 12px;
+margin: 12px;
+
+
+
+    
+    
+}
+.book  span :hover{
+    color: brown;
+
+}
+
+.book a :hover{
+
+    
+    /* color: rgb(118, 137, 246); */
+}
+.book :hover{ 
+    color:rgb(127, 168, 244);
+    
+    
+
+
+}
+.pic{
+    /* background-color: rgb(187, 187, 244); */
+    
+    margin-bottom: 78px;
+    box-shadow: 4px 12px 16px  12px rgba(10, 10, 10, 0.79);  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.what{
+
+font-family:Georgia, 'Times New Roman', Times, serif;
+
+    
+
+}
+.ex{
+
+    margin-left: 400px;
+    margin-right: 400px;
 }

@@ -1,12 +1,14 @@
 {% extends 'base.html'%} 
 {% block main %} 
 
+
+
 <h1 class="text-start mt-5 px-5 text-info">SIGN UP</h1>
 <div class="container d-flex justify-content-end align-items-center">
 
 <div class="container d-flex justify-content-between mt-5">
 
-  
+ 
 
 
              
@@ -26,24 +28,27 @@
     
     <div class="mb">
       <label for="Password1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="Password1">
+      <input type="password" class="form-control" id="Password1" name="Password1" > 
     </div>
     
     
     <div class="mb- ">
       <label for="Password2" class="form-label">conferm password</label>
-      <input type="password" class="form-control" id="Password2">
+      <input type="password" class="form-control" id="Password2"  name="Password2"> 
     </div>
     <div class="mb-3 form-check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
-    <button type="submit" class="btn btn-info px-5">Submit</button>
+    <button type="Submit" class="btn btn-info px-5">Submit</button> 
     
-  </form>
+    
   
+      
+    </form>
+    
 
-  <img src= "{{url_for('static', filename='images/img9.webp')}}" alt="images" width="700">
+  <img src= "{{url_for('static', filename='images/sign.png')}}" alt="images" width="900">
   
 </div>
   </div>
