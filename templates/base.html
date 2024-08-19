@@ -22,31 +22,38 @@
           <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav  md-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active " aria-current="page" href="/">ACCUEIL</a>
+                <a class="nav-link active " aria-current="page" href="/home">ACCUEIL</a>
                 
               </li>
               <li class="nav-item">
               
 
                 <li class="nav-item">
-                  <a class="nav-link active"   aria-current="page"href="propos">PROPOS</a>
+                  <a class="nav-link active"   aria-current="page"href="/propos">PROPOS</a>
                 </li>
 
                   <li class="nav-item">
                   
               </li>
               
-              
+              {% if user.is_authenticated %}
               <li class="nav-item">
-                <a class="nav-link active"   aria-current="page"href="signup">SIGN UP</a>
+                <a class="nav-link active "   aria-current="page" href="/logout">LOGOUT</a>
+              </li>
+              {%else%}
+
+              <li class="nav-item">
+                <a class="nav-link active"   aria-current="page" href="/signup">SIGN UP</a>
               </li>
             
         
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="login">LOGIN</a>
+                <a class="nav-link active" aria-current="page" href="/login">LOGIN</a>
               </li>
 
-              <li class="nav-item">
+              {% endif %}
+
+              <li class="nav-item"> -3
                 
             </li>
 
@@ -59,18 +66,19 @@
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
       messages %} {% for category, message in messages %} {% if category ==
       'error' %}
-      <div class="alert alert-danger alter-dismissable fade show" role="alert">
+   
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
         {{ message }}
-        <button type="button" class="close" data-dismiss="alert">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    
       </div>
-      {% else %}
-      <div class="alert alert-success alter-dismissable fade show" role="alert">
+
+      {% else %} 
+
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
         {{ message }}
-        <button type="button" class="close" data-dismiss="alert">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    
       </div>
       {% endif %} {% endfor %} {% endif %} {% endwith %}
   

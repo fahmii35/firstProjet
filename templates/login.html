@@ -10,7 +10,7 @@
   
   
        
-         <form class=" p-5 mt-5 mx-5 rounded" action="/login">
+         <form class=" p-5 mt-5 mx-5 rounded" method="POST" action="/login">
           
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -19,7 +19,7 @@
             </div>
             <div class="mb-3">
               <label  for="exampleInputPassword1 " class="form-label">Password</label>
-              <input type="password" class="form-control px-5" id="exampleInputPassword1" name="pass">
+              <input type="password" class="form-control px-5" id="exampleInputPassword1" name="password">
               
             </div>
             <div class="mb-3">
@@ -32,7 +32,7 @@
     </div>
   </div>
     <div class="col" >
-        <img src="{{url_for('static', filename='images/img11.webp')}}" alt="img.png" class="w-90  " height="500px">
+        <img src="{{url_for('static', filename='images/logi.png')}}" alt="img.png" class="w-90  " height="500px">
     </div>
   
 </section>
